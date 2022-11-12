@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="15" time="127.835">
+    <testcase classname="User is able to reigster with valid criteria" name="User can Register with valid fields" time="12.2">
+        <system-out><![CDATA[Given User direct to registration page......................................passed
+When user Enters valid criteria "Hassan","Ezzat","test2@gmail.com", "P@ssw0rd","P@ssw0rd".passed
+And User Clicks Register....................................................passed
+Then User register successfully.............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login" name="User login with valid username/password" time="8.822">
+        <system-out><![CDATA[When User enters "test2@gmail.com" & "P@ssw0rd".............................passed
+And User Clicks login button................................................passed
+Then User could login successfully  & go to Homepage........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login" name="User login with invalid username/password" time="7.133">
+        <system-out><![CDATA[When User enters "rest@gmail.com" & "1234"..................................passed
+And User Clicks login button................................................passed
+Then Error Message is displayed.............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="User is able to switch currency" name="Logged in user able to switch currency successfully" time="8.526">
+        <system-out><![CDATA[When User enters "test2@gmail.com" & "P@ssw0rd".............................passed
+And User Clicks login button................................................passed
+And User Switch currency....................................................passed
+Then Currency switched Successfully.........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Search" name="Search with productname" time="7.614">
+        <system-out><![CDATA[When User enters "test1@gmail.com" & "P@ssw0rd".............................passed
+And User Clicks login button................................................passed
+And User Search with "laptop"...............................................passed
+Then Search result would match with "laptop"................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Search" name="Search with productname 2" time="7.922">
+        <system-out><![CDATA[When User enters "test1@gmail.com" & "P@ssw0rd".............................passed
+And User Clicks login button................................................passed
+And User Search with "nike".................................................passed
+Then Search result would match with "nike"..................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Search" name="Search with SKU" time="9.044">
+        <system-out><![CDATA[When User enters "test2@gmail.com" & "P@ssw0rd".............................passed
+And User Clicks login button................................................passed
+And User Search with "AP_MBP_13"............................................passed
+And User Clicks on element..................................................passed
+Then Search result matchs with "AP_MBP_13"..................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Hover on element" name="User Hovers on product list to view sublist" time="6.2">
+        <system-out><![CDATA[When User hovers on "Apparel" item, and clicks subitem "Clothing"...........passed
+Then ActualResult equals Expected "clothing"................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Slider Click" name="User clicks on First slider" time="6.016">
+        <system-out><![CDATA[Given User direct to homepage...............................................passed
+When Clicks first slider....................................................passed
+Then User should redirected to relative slider result.......................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Slider Click" name="User clicks on Second slider" time="8.005">
+        <system-out><![CDATA[Given User direct to homepage...............................................passed
+When Clicks second slider...................................................passed
+Then User should redirected to relative to second result....................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Follow Us" name="_2" time="8.456">
+        <system-out><![CDATA[Given User Directs to contact us Footer.....................................passed
+When User clicks follow us Item "//body[1]/div[6]/div[4]/div[1]/div[4]/div[1]/ul[1]/li[1]/a[1]".passed
+Then User Direct to relevant URL "https://www.facebook.com/nopCommerce".....passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Follow Us" name="_3" time="10.519">
+        <system-out><![CDATA[Given User Directs to contact us Footer.....................................passed
+When User clicks follow us Item "//body[1]/div[6]/div[4]/div[1]/div[4]/div[1]/ul[1]/li[2]/a[1]".passed
+Then User Direct to relevant URL "https://twitter.com/nopCommerce"..........passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Follow Us" name="_4" time="12.216">
+        <system-out><![CDATA[Given User Directs to contact us Footer.....................................passed
+When User clicks follow us Item "//body[1]/div[6]/div[4]/div[1]/div[4]/div[1]/ul[1]/li[4]/a[1]".passed
+Then User Direct to relevant URL "https://www.youtube.com/user/nopCommerce".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Wishlist" name="User click on Items Favourit link" time="6.212">
+        <system-out><![CDATA[Given User direct to Item...................................................passed
+When User Clicks favorit icon...............................................passed
+Then Success Message is displayed...........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Wishlist" name="User checks that cart" time="8.632">
+        <system-out><![CDATA[Given User direct to Item...................................................passed
+When User Clicks favorit icon...............................................passed
+And user clicks wishlist tab................................................passed
+Then QTY value is bigger than 0.............................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
